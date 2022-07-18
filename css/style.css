@@ -1,17 +1,423 @@
-/* Error: Can't find stylesheet to import.
- *    ,
- * 11 | @import '/scss/components/bio';
- *    |         ^^^^^^^^^^^^^^^^^^^^^^
- *    '
- *   scss\style.scss 11:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a    \2577 \a 11 \2502  @import '/scss/components/bio';\d\a    \2502          ^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   scss\\style.scss 11:9  root stylesheet";
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bitter&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
 }
+
+/* Imports */
+/* Fuentes tipográficas */
+/*Quicksand*/
+/*Bitter*/
+/* HOME PAGE */
+/* header - main - footer */
+div {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-areas: "header header header" "main main main" "footer footer footer";
+  /* FOOTER */
+}
+div header {
+  border: solid white 1px;
+  width: 100%;
+  height: 13vh;
+  background-color: white;
+  position: sticky;
+  top: 0 auto;
+  grid-area: header;
+}
+div header a img {
+  position: absolute;
+  width: 260px;
+  left: 1%;
+  bottom: 15%;
+}
+div header input {
+  display: none;
+}
+div header:checked ~ nav {
+  transform: translateX(0);
+}
+div header label {
+  display: none;
+}
+div header nav {
+  margin-top: 3.5vh;
+}
+div header nav ul {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  right: 1%;
+}
+div header nav ul li {
+  margin: 8px;
+  margin-right: 10px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+}
+div header nav ul li a {
+  color: black;
+}
+@media screen and (min-width: 1000px) {
+  div header nav ul li a:hover {
+    animation: changeColor 3s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes changeColor {
+    0% {
+      color: rgba(65, 138, 83, 0.5058823529);
+    }
+    25% {
+      color: rgba(84, 188, 223, 0.5137254902);
+    }
+    50% {
+      color: rgba(232, 122, 105, 0.5137254902);
+    }
+    100% {
+      color: #B3A1A1;
+    }
+  }
+}
+div main {
+  grid-area: main;
+}
+div main img {
+  object-fit: cover;
+  width: 100%;
+  height: 75vh;
+}
+div footer {
+  width: 100%;
+  height: 11vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgba(179, 161, 161, 0.8549019608);
+  grid-area: footer;
+  /*Info izq*/
+}
+div footer div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 5%;
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px;
+}
+div footer div a {
+  color: #606060;
+}
+
+/* Partes del footer */
+.div__redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-left: 4%;
+}
+
+.div__redes__soc {
+  width: 20px;
+  margin: 0px 8px;
+}
+
+.div__redes__soc--fb {
+  width: 10px;
+}
+
+.div__der {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  margin-right: 6%;
+  padding: 0% auto;
+}
+
+.div__der--logo {
+  height: 25px;
+}
+
+/* RELATOS */
+/* Header relatos page */
+.relatos {
+  text-decoration-line: overline;
+}
+
+/* Sección N° 1 */
+.grid-container-relatos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 48vh 30vh 20vh 10vh;
+  gap: 8px;
+  grid-template-areas: "texto imagen imagen" "img2 img3 img4" "parrafo2 parrafo3 parrafo4" "boton2 boton3 boton4";
+}
+.grid-container-relatos p {
+  font-family: "Bitter", serif;
+  font-size: 14px;
+  text-align: center;
+  margin: 10%;
+}
+.grid-container-relatos a {
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px;
+  background-color: #B3A1A1;
+}
+.grid-container-relatos main {
+  grid-area: texto;
+  margin: 5%;
+  margin-top: 0%;
+}
+.grid-container-relatos main h1 {
+  font-size: 32px;
+  font-family: "Quicksand", sans-serif;
+}
+.grid-container-relatos main a {
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 90px 15px 10px 300px;
+  padding: 3px;
+}
+
+.grid-item-img {
+  grid-area: imagen;
+}
+
+.grid-item-img img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Sección N° 2 */
+/* Segunda fila */
+.grid-item-foto2 {
+  grid-area: img2;
+}
+
+.grid-item-foto3 {
+  grid-area: img3;
+}
+
+.grid-item-foto4 {
+  grid-area: img4;
+}
+
+.grid-item-foto2 img, .grid-item-foto3 img, .grid-item-foto4 img {
+  width: 70%;
+  height: 100%;
+  margin-left: 25%;
+}
+
+/* Tercera fila */
+.grid-item-tex2 {
+  grid-area: parrafo2;
+}
+
+.grid-item-tex3 {
+  grid-area: parrafo3;
+}
+
+.grid-item-tex4 {
+  grid-area: parrafo4;
+}
+
+h2, h3, h4 {
+  padding: 2px;
+}
+
+.grid-item-tex2, .grid-item-tex3, .grid-item-tex4 {
+  margin: 10% 10%;
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+}
+
+.grid-item-tex2 p, .grid-item-tex3 p, .grid-item-tex4 p {
+  font-family: "Bitter", serif;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Fin tercera fila */
+/* Cuarta fila */
+.grid-item-boton2 {
+  grid-area: boton2;
+}
+
+.grid-item-boton3 {
+  grid-area: boton3;
+}
+
+.grid-item-boton4 {
+  grid-area: boton4;
+}
+
+/* BIO */
+/* Header */
+.biopage {
+  text-decoration-line: overline;
+}
+
+.bio {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.bio img {
+  height: 418px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.bio p {
+  padding: 150px 20px 0px 20px;
+  font-size: 16px;
+  font-family: "Bitter", serif;
+}
+
+form {
+  margin-left: 25%;
+  padding: 20px;
+  background-color: rgba(179, 161, 161, 0.8549019608);
+  width: 45%;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  justify-items: center;
+}
+
+.hablemos {
+  font-family: "Quicksand", sans-serif;
+  font-weight: lighter;
+  font-size: 36px;
+}
+
+.indicador {
+  font-family: "Quicksand", sans-serif;
+  font-weight: lighter;
+}
+
+.relleno {
+  height: 20px;
+  font-family: "Bitter", serif;
+}
+
+.rellenotext {
+  height: 100px;
+  font-family: "Bitter", serif;
+}
+
+.enviar {
+  width: 80px;
+  height: 30px;
+  margin-left: 45%;
+  font-family: "Quicksand", sans-serif;
+}
+
+/* Menú responsive */
+@media screen and (max-width: 1000px) {
+  div header a img {
+    width: 200px;
+    bottom: 22%;
+    left: 5px;
+  }
+  div header input {
+    display: none;
+  }
+  div header input:checked ~ nav {
+    transform: translateX(0);
+  }
+  div header label {
+    height: 55px;
+    display: flex;
+    float: right;
+    margin-right: 5px;
+    margin-top: 12px;
+    border-radius: 15%;
+  }
+  div header label:hover {
+    animation: changeForm 4s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes changeForm {
+    0% {
+      background-color: rgba(65, 138, 83, 0.5058823529);
+    }
+    25% {
+      background-color: rgba(84, 188, 223, 0.5137254902);
+    }
+    50% {
+      background-color: rgba(232, 122, 105, 0.5137254902);
+    }
+    100% {
+      background-color: #B3A1A1;
+    }
+  }
+  div header nav {
+    background-color: rgba(179, 161, 161, 0.6705882353);
+    position: absolute;
+    width: 100%;
+    height: 76vh;
+    transform: translateX(-100%);
+    transition: all 2s;
+    top: 78px;
+  }
+  div header nav ul li {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+  }
+  div header nav ul li a {
+    color: black;
+    padding: 10px;
+  }
+  div header nav ul li a:hover {
+    border-radius: 12%;
+    background-color: #b3a1a1;
+    transition: all 2s;
+  }
+}
+/* Responsive -  FOOTER */
+@media only screen and (min-width: 400px) and (max-width: 1000px) {
+  footer div a {
+    font-size: 10px;
+  }
+  .div__redes__soc {
+    width: 15px;
+    margin: 0px 6px;
+  }
+  .div__redes__soc--fb {
+    width: 8px;
+  }
+  .div__der--logo {
+    height: 20px;
+  }
+}
+/* Responsive - relatos */
+@media only screen and (min-width: 400px) and (max-width: 1000px) {
+  .grid-container-relatos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
