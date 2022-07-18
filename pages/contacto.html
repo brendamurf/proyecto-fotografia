@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,7 +17,7 @@
 
 <!-- Contacto -->
 
-<body>
+<body class="body-contacto">
 
     <!-- Header -->
     <header class="header">
@@ -47,31 +47,32 @@
 
 
     <!-- Formulario -->
-    <h1 class="hablemos">Hablemos</h1>
-    <!-- A continuación irían las entradas 
-    NOMBRE
-    EMAIL
-    MENSAJE
-    BOTÓN ENVIAR -->
-    <p class="hablemos-p">(Acá iría el formulario para enviar mails)</p>
+    
+    <section class="sec-form">
+        <form action="">
+        
+            <h1 class="hablemos">Hablemos</h1>
+
+            <label class="indicador" for="nombre">Nombre</label>
+            <input class= "relleno" type="text" placeholder="¿Cómo te llamás?">
+
+            <label class="indicador" for="pais">País</label>
+            <input class= "relleno" type="text" placeholder="¿De dónde sos?">
+
+            <label class="indicador" for="email">E-mail</label>
+            <input class= "relleno" type="email" placeholder="¿Cuál es tu e-mail?">
+
+            <label class="indicador" for="mensaje">Mensaje</label>
+            <textarea class= "relleno" placeholder="¡Escribí tu mensaje!"></textarea>
+
+            <input class="enviar" type="submit" value="Enivar">         
+           
+        </form>
+
+    </section>
+    
 
     <!-- Fin del formulario -->
-
-
-    <!-- Sección "Seguime" con links a rr.ss -->
-    <section class="seguime">
-        <h2 class="tit-seguime">Seguime</h2>
-
-        <img src="/multimedia/iconos/instagram.png" alt="Logo Instagram" class="redes-ig"></img>
-        <a class="texto-ig" href="https://www.instagram.com/brenditamur/" target="_blank">@brenditamur</a>
-
-        <img src="/multimedia/iconos/facebook.png" alt="Logo Facebook" class="redes-fb"></img>
-        <a class="texto-fb" href="https://www.facebook.com/BrendaMurFotografia" target="_blank">Brenda Mur Fotografía</a>
-
-        <img src="/multimedia/iconos/linkedin.png" alt="Logo Linkedin" class="redes-in"></img>
-        <a class="texto-in" href="https://www.linkedin.com/in/brendamur" target="_blank">Brenda Mur</a>
-    </section>
-    <!-- Fin sección seguime -->
 
 
     <!-- Footer -->
