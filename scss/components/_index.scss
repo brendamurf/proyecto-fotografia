@@ -63,28 +63,33 @@ div{
                     font-size: 16px;
                    
                    a{
-                        &:hover{
-                            animation: changeColor 3s;
-                            animation-iteration-count: infinite;
-                        }
-                        
-                        @keyframes changeColor {
-                            0% {
-                                color: #418a5381;
+                        color: black;
+
+                        @media screen and (min-width: 1000px) {
+                            
+                            &:hover{
+                                animation: changeColor 3s;
+                                animation-iteration-count: infinite;
                             }
                             
-                            25% {
-                                color: #54bcdf83;
-                            }
-                            
-                            50%{
-                                color: #e87a6983;
-                            }
-                            
-                            100%{
-                                color: #B3A1A1;
-                            }
-                        }
+                            @keyframes changeColor {
+                                0% {
+                                    color: #418a5381;
+                                }
+                                
+                                25% {
+                                    color: #54bcdf83;
+                                }
+                                
+                                50%{
+                                    color: #e87a6983;
+                                }
+                                
+                                100%{
+                                    color: #B3A1A1;
+                                }
+                            }                          
+                        } 
                     }
                 }
             }
@@ -118,19 +123,14 @@ div{
             flex-direction: column;
             justify-content: center;
             margin-left: 5%;
-            color: #606060;
             font-family: 'Quicksand', sans-serif;
-            font-size: 14px; 
+            font-size: 14px;
+            
+            a{
+                color: #606060;
+            }
         }
 
-        /*RR.SS*/
-        .div__redes{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            margin-right: 8vh;
-        }
     }
 }
 
@@ -151,7 +151,6 @@ div{
 .div__redes__soc--fb{
     width: 10px;
 }
-
 
 .div__der{
     display: flex;

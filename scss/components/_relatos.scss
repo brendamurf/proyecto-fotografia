@@ -1,0 +1,138 @@
+/* RELATOS */
+/* Header relatos page */
+.relatos{
+    text-decoration-line: overline;
+}
+
+/* Sección N° 1 */
+
+.grid-container-relatos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 48vh 30vh 20vh 10vh;
+    gap: 8px;
+    grid-template-areas:
+    'texto imagen imagen'
+    'img2 img3 img4'
+    'parrafo2 parrafo3 parrafo4'
+    'boton2 boton3 boton4';
+
+    p{
+        font-family: 'Bitter', serif;
+        font-size: 14px;
+        text-align: center;
+        margin: 10%;
+        
+    }
+
+    a{
+        color: black;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 14px;
+        background-color: #B3A1A1;
+        
+    }
+
+    main{
+        grid-area: texto;
+        margin: 5%;
+        margin-top: 0%;
+
+        h1{
+            font-size: 32px;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        a{
+           
+            font-size: 18px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            margin: 90px 15px 10px 300px;
+            padding: 3px;
+        }
+    }
+}
+
+.grid-item-img{
+    grid-area: imagen;
+}
+
+.grid-item-img img{
+    height: 300px; 
+    width: 100%;
+    object-fit: cover; 
+}
+
+/* Sección N° 2 */
+/* Segunda fila */
+
+.grid-item-foto2{
+    grid-area: img2;
+}
+
+.grid-item-foto3{
+    grid-area: img3;
+}
+
+.grid-item-foto4{
+    grid-area: img4;
+}
+
+.grid-item-foto2 img, .grid-item-foto3 img, .grid-item-foto4 img{
+    width: 70%;
+    height: 100%;
+    margin-left: 25%;
+}
+
+
+/* Tercera fila */
+
+.grid-item-tex2{
+    grid-area: parrafo2;
+}
+.grid-item-tex3{
+    grid-area: parrafo3;
+}
+.grid-item-tex4{
+    grid-area: parrafo4;
+}
+
+h2, h3, h4{
+    padding: 2px;
+}
+
+.grid-item-tex2, .grid-item-tex3, .grid-item-tex4{
+    margin: 10% 10%;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+.grid-item-tex2 p, .grid-item-tex3 p, .grid-item-tex4 p{
+    font-family: 'Bitter', serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Fin tercera fila */
+
+
+/* Cuarta fila */
+.grid-item-boton2{
+    grid-area: boton2;
+}
+.grid-item-boton3{
+    grid-area: boton3;
+}
+.grid-item-boton4{
+    grid-area: boton4;
+}
+
+
+
+
+

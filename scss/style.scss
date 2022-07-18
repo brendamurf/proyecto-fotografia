@@ -1,8 +1,3 @@
-/* Fuentes tipográficas */
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap'); /*Quicksand*/
-@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap'); /*Bitter*/
-
-/* Restablecer valores por default */
 *{
    margin: 0;
    padding: 0;
@@ -12,3 +7,5 @@
 
 /* Imports */
 @import './components/index';
+@import './components/relatos';
+@import './components/mediaqueries';
