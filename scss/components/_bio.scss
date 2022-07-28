@@ -6,19 +6,36 @@
 
 .bio{
     display: flex;
-    justify-content: space-evenly;
-}
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 5%;
+
+    h1{
+        display: none;
+        
+        // display: flex;
+        // flex-direction: row;
+        // justify-content: flex-end;
+        margin: 5% 45% 0% 0%;
+        font-size: 35px;
+        font-family: 'quicksand', sans-serif;
+    }
+
+    img{
+        
+        height: 448px;
+        // display: flex;
+        // justify-content: center;
+        margin-left: 15%;
+    }
+    
+    p{
+        margin: 2% 15% 0% 5%; 
+        font-size: 15px;
+        font-family: 'Bitter', serif;
+        text-align: left;
+        line-height: 1.4;
+    }
 
 
-.bio img{
-    height: 418px;
-    padding: 20px; 
-    display: flex;
-    justify-content: center;
-}
-
-.bio p{
-    padding: 150px 20px 0px 20px; 
-    font-size: 16px;
-    font-family: 'Bitter', serif;
 }

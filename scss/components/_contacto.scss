@@ -1,39 +1,59 @@
-form{
-    margin-left: 25%;
-    padding: 20px;
-    background-color: #b3a1a1da;
-    width: 45%;
-    height: 75vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    justify-items: center;
+.contactopage{
+    text-decoration-line: overline;
 }
 
-.hablemos{
-    font-family: 'Quicksand', sans-serif;
-    font-weight: lighter;
-    font-size: 36px;
+section{
+    height: 100vh;
+    form{
+        
+        margin-left: 25%;
+        margin-top: 2%;
+        padding: 20px;
+        background-color: #b3a1a1;
+        width: 45%;
+        height: 75vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        justify-items: center;
+
+        .hablemos{
+            font-family: 'Quicksand', sans-serif;
+            font-weight: lighter;
+            font-size: 36px;
+        }
+        .indicador{
+            font-family: 'Quicksand', sans-serif;
+            font-weight: lighter;
+        }
+        
+        .relleno{
+            height: 20px;
+            font-family: 'Bitter', serif;
+        }
+        
+        .rellenotext{
+            height: 100px;
+            font-family: 'Bitter', serif;
+            resize: none;
+            
+        }
+        
+        .enviar{
+           width: 80px;
+           height: 30px;
+           margin-left: 45%;
+           font-family: 'Quicksand', sans-serif;
+
+           
+        }
+
+
+        
+    }
+
 }
 
-.indicador{
-    font-family: 'Quicksand', sans-serif;
-    font-weight: lighter;
-}
 
-.relleno{
-    height: 20px;
-    font-family: 'Bitter', serif;
-}
 
-.rellenotext{
-    height: 100px;
-    font-family: 'Bitter', serif;
-}
 
-.enviar{
-   width: 80px;
-   height: 30px;
-   margin-left: 45%;
-   font-family: 'Quicksand', sans-serif;
-}

@@ -6,162 +6,158 @@
 /* HOME PAGE */
 /* header - main - footer */
 
-div{
-   width: 100%;
-   height: 100%;
-   display: grid;
-   grid-template-areas:
-   'header header header'
-   'main main main'
-   'footer footer footer';
+header{
+    border: solid #ffff 1px;
+    width: 100%;
+    height: 10vh;
+    background-color: #ffff;
+    position: sticky;
+    top: 0 auto;
 
-   header{
-        border: solid #ffff 1px;
-        width: 100%;
-        height: 13vh;
-        background-color: #ffff;
-        position: sticky;
-        top: 0 auto;
-        grid-area: header;
-
-        a{
-            img{
-                position: absolute;
-                width: 260px;
-                left: 1%;
-                bottom: 15%; 
-            }
+    a{
+        img{
+            position: absolute;
+            width: 230px;
+            left: 1%;
+            bottom: 15%; 
         }
+    }
 
-        input{
-            display: none;
-        }
+    input{
+        display: none;
+    }
 
-        &:checked ~ nav{
-            transform: translateX(0);
-        }
+    &:checked ~ nav{
+        transform: translateX(0);
+    }
 
-        label{
-            display: none;
-        }
+    label{
+        display: none;
+    }
         
-        nav{
-            margin-top: 3.50vh;
+    nav{
+        margin-top: 2.2vh;
 
-           ul{
-                position: relative;
-                display: flex;
-                flex-direction: row;
-                justify-content: flex-end;
-                flex-wrap: wrap;
-                right: 1%;
+        ul{
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+            right: 1%;
                 
-                li{
-                    margin: 8px;
-                    margin-right: 10px;
-                    font-family: 'Quicksand', sans-serif;
-                    font-size: 16px;
+            li{
+                margin: 8px;
+                margin-right: 10px;
+                font-family: 'Quicksand', sans-serif;
+                font-size: 16px;
                    
-                   a{
-                        color: black;
+                a{
+                    color: black;
 
 
-                        @media screen and (min-width: 1000px) {
+                    @media screen and (min-width: 1000px) {
                             
-                            &:hover{
-                                animation: changeColor 3s;
-                                animation-iteration-count: infinite;
+                        &:hover{
+                            animation: changeColor 3s;
+                            animation-iteration-count: infinite;
+                        }
+                            
+                        @keyframes changeColor {
+                            0% {
+                                color: #418a5381;
                             }
-                            
-                            @keyframes changeColor {
-                                0% {
-                                    color: #418a5381;
-                                }
                                 
-                                25% {
-                                    color: #54bcdf83;
-                                }
+                            25% {
+                                color: #54bcdf83;
+                            }
                                 
-                                50%{
-                                    color: #e87a6983;
-                                }
+                            50%{
+                                color: #e87a6983;
+                            }
                                 
-                                100%{
-                                    color: #B3A1A1;
-                                }
-                            }                          
-                        } 
-                    }
+                            100%{
+                                color: #B3A1A1;
+                            }
+                        }                          
+                    } 
                 }
             }
         }
     }
-
-   main{
-        grid-area: main;
-        
-        img{
-            object-fit:cover;
-            width: 100%;
-            height: 75vh;
-        }
-    }
-    
-    /* FOOTER */
-    
-    footer{
-        width: 100%;
-        height: 11vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        background-color: #b3a1a1da;
-        grid-area: footer;
-
-        /*Info izq*/
-        div{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            margin-left: 5%;
-            font-family: 'Quicksand', sans-serif;
-            font-size: 14px;
-            
-            a{
-                color: #606060;
-            }
-        }
-
-    }
 }
 
-/* Partes del footer */
-.div__redes{
+main{
+        
+    img{
+        object-fit:cover;
+        width: 100%;
+        height: 75vh;
+    }
+}
+    
+/* FOOTER */
+    
+footer{
+    width: 100%;
+    height: 11vh;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding-left: 4%;
+    justify-content: space-between;
+    background-color: #b3a1a1da;
+
+    /*Info izq*/
+    .div__izq{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 5%;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 14px;
+            
+        a{
+            color: #606060;
+        }
+    }
+
+    .div__redes{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        .div__redes__soc{
+            width: 20px;
+            margin: 0px 8px
+        }
+
+        .div__redes__soc--fb{
+            width: 10px;
+        }
+    }
+
+    .div__der{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        margin-right: 6%;
+        padding: 0% auto;
+
+        .ubi-footer{
+            color: #606060;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 14px;
+        }        
+
+        .div__der--logo{
+            height: 25px;
+        }
+    }
+
 }
 
-.div__redes__soc{
-    width: 20px;
-    margin: 0px 8px  
-}
 
-.div__redes__soc--fb{
-    width: 10px;
-}
 
-.div__der{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    margin-right: 6%;
-    padding: 0% auto;
-}
 
-.div__der--logo{
-    height: 25px;
-}
+
