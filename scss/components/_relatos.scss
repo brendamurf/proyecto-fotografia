@@ -1,6 +1,6 @@
 /* RELATOS */
 /* Header relatos page */
-.relatos{
+.relatospage{
     text-decoration-line: overline;
 }
 
@@ -9,9 +9,10 @@
 .grid-container-relatos{
     width: 92%;
     padding: 1%;
+    height: 130vh;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 48vh 30vh 20vh 10vh;
+    grid-template-rows: 65vh 30vh 20vh 10vh;
     gap: 8px;
     grid-template-areas:
     'texto imagen imagen'
@@ -24,8 +25,7 @@
         font-family: 'Bitter', serif;
         font-size: 14px;
         text-align: center;
-        margin: 10% 0% 0% 20%;
-        
+        margin: 10% 0% 0% 20%;        
     }
 
     a{
@@ -36,14 +36,14 @@
         font-size: 14px;
         background-color: #B3A1A1;
         padding: 8px;
-        margin: 2% 35% 0% 35%;
-
-        
+        margin: 2% 35% 0% 25%;
     }
 
     main{
         grid-area: texto;
         margin: 7%;
+        padding-bottom: 100px;
+
 
         h1{
             font-size: 32px;
@@ -53,7 +53,6 @@
         .btn-main{
             font-size: 16px;
             margin: 10px 30px 0px 180px;
-            padding: 10px;
         }
 
         .p-principal{
@@ -79,19 +78,20 @@
         img{
             width: 70%;
             height: 100%;
-            margin-left: 25% 
+            margin-left: 25%;
         }
     }
 
     h2{
         font-size: 18px;
-        margin: 2% 0% 0% 20%;
+        margin: 3% 0% 0% 20%;
         font-family: 'Quicksand', sans-serif;
         text-align: center;
     }
 
     .grid-item-tex2{
         grid-area: parrafo2;
+        
     }
 
     .grid-item-foto3{
@@ -100,13 +100,13 @@
         img{
             width: 70%;
             height: 100%;
-            margin-left: 25%; 
+            margin-left: 25%;
         }
     }
 
     h3{
         font-size: 18px;
-        margin: 2% 0% 0% 20%;
+        margin: 3% 0% 0% 20%;
         font-family: 'Quicksand', sans-serif;
         text-align: center;
     }
@@ -121,13 +121,13 @@
         img{
             width: 70%;
             height: 100%;
-            margin-left: 25%; 
+            margin-left: 25%;
         }
     }
 
     h4{
         font-size: 18px;
-        margin: 2% 0% 0% 20%;
+        margin: 3% 0% 0% 20%;
         font-family: 'Quicksand', sans-serif;
         text-align: center;
     }
@@ -138,12 +138,15 @@
 
     .grid-item-boton2{
         grid-area: boton2;
+        margin-left: 28%;
     }
     .grid-item-boton3{
         grid-area: boton3;
+        margin-left: 28%;
     }
     .grid-item-boton4{
         grid-area: boton4;
+        margin-left: 28%;
     }
 
 }

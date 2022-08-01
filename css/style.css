@@ -137,7 +137,7 @@ footer .div__der .div__der--logo {
 
 /* RELATOS */
 /* Header relatos page */
-.relatos {
+.relatospage {
   text-decoration-line: overline;
 }
 
@@ -145,9 +145,10 @@ footer .div__der .div__der--logo {
 .grid-container-relatos {
   width: 92%;
   padding: 1%;
+  height: 130vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 48vh 30vh 20vh 10vh;
+  grid-template-rows: 65vh 30vh 20vh 10vh;
   gap: 8px;
   grid-template-areas: "texto imagen imagen" "img2 img3 img4" "parrafo2 parrafo3 parrafo4" "boton2 boton3 boton4";
 }
@@ -165,11 +166,12 @@ footer .div__der .div__der--logo {
   font-size: 14px;
   background-color: #B3A1A1;
   padding: 8px;
-  margin: 2% 35% 0% 35%;
+  margin: 2% 35% 0% 25%;
 }
 .grid-container-relatos main {
   grid-area: texto;
   margin: 7%;
+  padding-bottom: 100px;
 }
 .grid-container-relatos main h1 {
   font-size: 32px;
@@ -178,7 +180,6 @@ footer .div__der .div__der--logo {
 .grid-container-relatos main .btn-main {
   font-size: 16px;
   margin: 10px 30px 0px 180px;
-  padding: 10px;
 }
 .grid-container-relatos main .p-principal {
   margin: 7% 5% 0% 0%;
@@ -202,7 +203,7 @@ footer .div__der .div__der--logo {
 }
 .grid-container-relatos h2 {
   font-size: 18px;
-  margin: 2% 0% 0% 20%;
+  margin: 3% 0% 0% 20%;
   font-family: "Quicksand", sans-serif;
   text-align: center;
 }
@@ -219,7 +220,7 @@ footer .div__der .div__der--logo {
 }
 .grid-container-relatos h3 {
   font-size: 18px;
-  margin: 2% 0% 0% 20%;
+  margin: 3% 0% 0% 20%;
   font-family: "Quicksand", sans-serif;
   text-align: center;
 }
@@ -236,7 +237,7 @@ footer .div__der .div__der--logo {
 }
 .grid-container-relatos h4 {
   font-size: 18px;
-  margin: 2% 0% 0% 20%;
+  margin: 3% 0% 0% 20%;
   font-family: "Quicksand", sans-serif;
   text-align: center;
 }
@@ -245,12 +246,15 @@ footer .div__der .div__der--logo {
 }
 .grid-container-relatos .grid-item-boton2 {
   grid-area: boton2;
+  margin-left: 28%;
 }
 .grid-container-relatos .grid-item-boton3 {
   grid-area: boton3;
+  margin-left: 28%;
 }
 .grid-container-relatos .grid-item-boton4 {
   grid-area: boton4;
+  margin-left: 28%;
 }
 
 /* BIO */
@@ -259,27 +263,29 @@ footer .div__der .div__der--logo {
   text-decoration-line: overline;
 }
 
-.bio {
+.body-bio {
+  background-color: rgba(112, 107, 106, 0.1921568627);
+}
+.body-bio .bio {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   padding-top: 5%;
+  height: 80vh;
 }
-.bio h1 {
+.body-bio .bio h1 {
   display: none;
-  margin: 5% 45% 0% 0%;
-  font-size: 35px;
-  font-family: "quicksand", sans-serif;
 }
-.bio img {
+.body-bio .bio img {
   height: 448px;
   margin-left: 15%;
 }
-.bio p {
+.body-bio .bio .parrafos-bio {
+  display: block;
+}
+.body-bio .bio .parrafos-bio p {
   margin: 2% 15% 0% 5%;
   font-size: 15px;
   font-family: "Bitter", serif;
-  text-align: left;
+  text-align: justify;
   line-height: 1.4;
 }
 
@@ -287,10 +293,13 @@ footer .div__der .div__der--logo {
   text-decoration-line: overline;
 }
 
-section {
+.body-contacto {
+  background-image: url("/multimedia/imagenes/tejados.png");
+}
+.body-contacto section {
   height: 100vh;
 }
-section form {
+.body-contacto section form {
   margin-left: 25%;
   margin-top: 2%;
   padding: 20px;
@@ -302,25 +311,25 @@ section form {
   justify-content: space-evenly;
   justify-items: center;
 }
-section form .hablemos {
+.body-contacto section form .hablemos {
   font-family: "Quicksand", sans-serif;
   font-weight: lighter;
   font-size: 36px;
 }
-section form .indicador {
+.body-contacto section form .indicador {
   font-family: "Quicksand", sans-serif;
   font-weight: lighter;
 }
-section form .relleno {
+.body-contacto section form .relleno {
   height: 20px;
   font-family: "Bitter", serif;
 }
-section form .rellenotext {
+.body-contacto section form .rellenotext {
   height: 100px;
   font-family: "Bitter", serif;
   resize: none;
 }
-section form .enviar {
+.body-contacto section form .enviar {
   width: 80px;
   height: 30px;
   margin-left: 45%;
@@ -329,18 +338,18 @@ section form .enviar {
 
 /* Menú responsive */
 @media screen and (max-width: 1000px) {
-  div header a img {
+  header a img {
     width: 200px;
     bottom: 22%;
     left: 5px;
   }
-  div header input {
+  header input {
     display: none;
   }
-  div header input:checked ~ nav {
+  header input:checked ~ nav {
     transform: translateX(0);
   }
-  div header label {
+  header label {
     height: 55px;
     display: flex;
     float: right;
@@ -348,7 +357,7 @@ section form .enviar {
     margin-top: 12px;
     border-radius: 15%;
   }
-  div header label:hover {
+  header label:hover {
     animation: changeForm 4s;
     animation-iteration-count: infinite;
   }
@@ -366,7 +375,7 @@ section form .enviar {
       background-color: #B3A1A1;
     }
   }
-  div header nav {
+  header nav {
     background-color: rgba(179, 161, 161, 0.6705882353);
     position: absolute;
     width: 100%;
@@ -375,18 +384,18 @@ section form .enviar {
     transition: all 2s;
     top: 78px;
   }
-  div header nav ul li {
+  header nav ul li {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 30px;
   }
-  div header nav ul li a {
+  header nav ul li a {
     color: black;
     padding: 10px;
   }
-  div header nav ul li a:hover {
+  header nav ul li a:hover {
     border-radius: 12%;
     background-color: #b3a1a1;
     transition: all 2s;
@@ -394,17 +403,17 @@ section form .enviar {
 }
 /* Responsive -  FOOTER */
 @media only screen and (min-width: 400px) and (max-width: 1000px) {
-  footer div a {
+  footer footer div a {
     font-size: 10px;
   }
-  .div__redes__soc {
+  footer .div__redes__soc {
     width: 15px;
     margin: 0px 6px;
   }
-  .div__redes__soc--fb {
+  footer .div__redes__soc--fb {
     width: 8px;
   }
-  .div__der--logo {
+  footer .div__der--logo {
     height: 20px;
   }
 }
@@ -414,6 +423,30 @@ section form .enviar {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+}
+/*Responsive - bio */
+@media only screen and (min-width: 400px) and (max-width: 1000px) {
+  .bio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5%;
+    height: 160vh;
+  }
+  .bio h1 {
+    display: flex;
+    padding-right: 500px;
+    margin-bottom: 3%;
+    font-size: 26px;
+    font-family: "quicksand", sans-serif;
+  }
+  .bio img {
+    padding-right: 150px;
+    height: 400px;
+  }
+  .bio p {
+    padding-left: 70px;
   }
 }
 
