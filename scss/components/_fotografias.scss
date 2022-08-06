@@ -1,0 +1,233 @@
+/*FOTOGRAFÍAS*/
+
+/* Header */
+.fotografias{
+    text-decoration-line: overline;
+}
+
+
+.collage{
+    background-color: #e6f5ffda;
+    // width: 92vw;
+    height: 85vh;
+    // padding: 50px;
+
+    img{
+        width: 200px;
+        position: absolute;
+    }
+        
+    .img1{
+        margin: 18px 0px 0px 80px;
+        transition: all 1s;
+        
+        &:hover{
+            transform: scale(1.5);
+        }
+    }
+        
+    .img2{
+        margin: 65px 0px 95px 290px;
+        transition: all 1s;
+            
+        &:hover{
+            transform: scale(1.5);
+        }      
+    }
+        
+    .img3{
+        margin: 18px 0px 170px 500px;
+        transition: all 1s;
+        
+        &:hover{
+            transform: scale(1.5);
+        }
+    }
+        
+    .img4{
+        margin: 65px 0px 0px 710px;
+        transition: all 1s;
+        
+        &:hover{
+            transform: scale(1.5);
+        }
+    }
+        
+    .img5{
+        margin: 18px 0px 0px 925px;
+        transition: all 1s;
+        
+        &:hover{
+            transform: scale(1.5);
+        }
+    }
+        
+    .img6{
+        margin: 65px 0px 0px 1135px;
+        transition: all 1s;
+        
+        &:hover{
+            transform: scale(1.5);
+        }
+    }
+    
+
+    .img7{
+        margin: 170px 0px 0px 15px;
+        transition: all 1s;
+        
+        &:hover{
+            transform: scale(1.5);
+        }
+    }
+    
+    .img8{
+        margin: 227px 0px 0px 220px;
+        transition: all 1s;
+            
+        &:hover{
+            transform: scale(1.5);
+        }
+    }
+
+    .img9{
+        margin: 180px 0px 0px 435px;
+        transition: all 1s;
+            
+        &:hover{
+            transform: scale(1.5);
+        }
+    }
+
+    .img10{
+        margin: 200px 0px 0px 650px;
+        transition: all 1s;
+            
+        &:hover{
+            transform: scale(1.5);
+        }
+    }
+
+    .img11{
+        margin: 170px 0px 0px 880px;
+        transition: all 1s;
+            
+        &:hover{
+            transform: scale(1.5);
+        }
+    }
+
+    .img12{
+        margin: 220px 0px 0px 1055px;
+        transition: all 1s;
+            
+        &:hover{
+            transform: scale(1.5);
+        }
+    }
+
+    .img13{
+        margin: 320px 0px 0px 860px;
+        transition: all 1s;
+            
+        &:hover{
+            transform: scale(1.5);
+        }
+    }
+
+    .img14{
+        width: 100px;
+        margin: 360px 0px 0px 750px;
+        transition: all 1s;
+            
+        &:hover{
+            transform: scale(1.5);
+        }
+    }
+
+    .img15{
+        width: 110px;
+        margin: 380px 0px 0px 620px;
+        transition: all 1s;
+            
+        &:hover{
+            transform: scale(1.5);
+        }
+    }
+
+    .img16{
+        margin: 380px 0px 0px 245px;
+        transition: all 1s;
+            
+        &:hover{
+            transform: scale(1.5);
+        }
+    }
+
+    .img17{
+        width: 150px;
+        margin: 300px 0px 0px 55px;
+        transition: all 1s;
+            
+        &:hover{
+            transform: scale(1.5);
+        }
+    }
+    
+    
+
+    
+
+
+
+}
+  
+   
+
+
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+/* Sección N° 2 y 3 - carrusel paisajes y retratos */
+section div img{
+    height: 281px;
+}
+
+.carrusel-1, .carrusel-2{
+    margin: 5% 0% 5% 0%;
+    display: flex;
+}
+
+.paisajes img, .retratos img{
+    height: 40vh;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+.paisajes__tit, .retratos__tit{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: lighter;
+    margin-left: 3vw;
+    margin-bottom: 5px;
+}
+
+/* Responsive - fotografías */
+@media only screen and (min-width: 400px) and (max-width: 800px) {
+    .fotografias-responsive{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -135,6 +135,175 @@ footer .div__der .div__der--logo {
   height: 25px;
 }
 
+/*FOTOGRAFÍAS*/
+/* Header */
+.fotografias {
+  text-decoration-line: overline;
+}
+
+.collage {
+  background-color: rgba(230, 245, 255, 0.8549019608);
+  height: 85vh;
+}
+.collage img {
+  width: 200px;
+  position: absolute;
+}
+.collage .img1 {
+  margin: 18px 0px 0px 80px;
+  transition: all 1s;
+}
+.collage .img1:hover {
+  transform: scale(1.5);
+}
+.collage .img2 {
+  margin: 65px 0px 95px 290px;
+  transition: all 1s;
+}
+.collage .img2:hover {
+  transform: scale(1.5);
+}
+.collage .img3 {
+  margin: 18px 0px 170px 500px;
+  transition: all 1s;
+}
+.collage .img3:hover {
+  transform: scale(1.5);
+}
+.collage .img4 {
+  margin: 65px 0px 0px 710px;
+  transition: all 1s;
+}
+.collage .img4:hover {
+  transform: scale(1.5);
+}
+.collage .img5 {
+  margin: 18px 0px 0px 925px;
+  transition: all 1s;
+}
+.collage .img5:hover {
+  transform: scale(1.5);
+}
+.collage .img6 {
+  margin: 65px 0px 0px 1135px;
+  transition: all 1s;
+}
+.collage .img6:hover {
+  transform: scale(1.5);
+}
+.collage .img7 {
+  margin: 170px 0px 0px 15px;
+  transition: all 1s;
+}
+.collage .img7:hover {
+  transform: scale(1.5);
+}
+.collage .img8 {
+  margin: 227px 0px 0px 220px;
+  transition: all 1s;
+}
+.collage .img8:hover {
+  transform: scale(1.5);
+}
+.collage .img9 {
+  margin: 180px 0px 0px 435px;
+  transition: all 1s;
+}
+.collage .img9:hover {
+  transform: scale(1.5);
+}
+.collage .img10 {
+  margin: 200px 0px 0px 650px;
+  transition: all 1s;
+}
+.collage .img10:hover {
+  transform: scale(1.5);
+}
+.collage .img11 {
+  margin: 170px 0px 0px 880px;
+  transition: all 1s;
+}
+.collage .img11:hover {
+  transform: scale(1.5);
+}
+.collage .img12 {
+  margin: 220px 0px 0px 1055px;
+  transition: all 1s;
+}
+.collage .img12:hover {
+  transform: scale(1.5);
+}
+.collage .img13 {
+  margin: 320px 0px 0px 860px;
+  transition: all 1s;
+}
+.collage .img13:hover {
+  transform: scale(1.5);
+}
+.collage .img14 {
+  width: 100px;
+  margin: 360px 0px 0px 750px;
+  transition: all 1s;
+}
+.collage .img14:hover {
+  transform: scale(1.5);
+}
+.collage .img15 {
+  width: 110px;
+  margin: 380px 0px 0px 620px;
+  transition: all 1s;
+}
+.collage .img15:hover {
+  transform: scale(1.5);
+}
+.collage .img16 {
+  margin: 380px 0px 0px 245px;
+  transition: all 1s;
+}
+.collage .img16:hover {
+  transform: scale(1.5);
+}
+.collage .img17 {
+  width: 150px;
+  margin: 300px 0px 0px 55px;
+  transition: all 1s;
+}
+.collage .img17:hover {
+  transform: scale(1.5);
+}
+
+/* Sección N° 2 y 3 - carrusel paisajes y retratos */
+section div img {
+  height: 281px;
+}
+
+.carrusel-1, .carrusel-2 {
+  margin: 5% 0% 5% 0%;
+  display: flex;
+}
+
+.paisajes img, .retratos img {
+  height: 40vh;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.paisajes__tit, .retratos__tit {
+  font-family: "Quicksand", sans-serif;
+  font-weight: lighter;
+  margin-left: 3vw;
+  margin-bottom: 5px;
+}
+
+/* Responsive - fotografías */
+@media only screen and (min-width: 400px) and (max-width: 800px) {
+  .fotografias-responsive {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 /* RELATOS */
 /* Header relatos page */
 .relatospage {
@@ -401,7 +570,7 @@ footer .div__der .div__der--logo {
     transition: all 2s;
   }
 }
-/* Responsive -  FOOTER */
+/* Responsive -  footer */
 @media only screen and (min-width: 400px) and (max-width: 1000px) {
   footer footer div a {
     font-size: 10px;
@@ -415,6 +584,12 @@ footer .div__der .div__der--logo {
   }
   footer .div__der--logo {
     height: 20px;
+  }
+}
+/*Responsive - fotografias */
+@media only screen and (min-width: 400px) and (max-width: 1000px) {
+  .collage {
+    width: 500px;
   }
 }
 /* Responsive - relatos */
