@@ -431,6 +431,24 @@ footer .div__der .div__der--logo {
   margin-left: 28%;
 }
 
+.fotos-relato1 {
+  display: flex;
+  margin-top: 5%;
+}
+.fotos-relato1 .mapa-radial {
+  align-items: center;
+}
+.fotos-relato1 .mapa-radial img {
+  height: 181px;
+}
+.fotos-relato1 .mapa-radial .tit-fotos-jorge {
+  font-family: "Quicksand", sans-serif;
+  font-size: 32px;
+  font-weight: lighter;
+  margin-left: 3vw;
+  margin-bottom: 10px;
+}
+
 /* BIO */
 /* Header */
 .biopage {
