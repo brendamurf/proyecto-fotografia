@@ -431,6 +431,34 @@ footer .div__der .div__der--logo {
   margin-left: 28%;
 }
 
+.main-relatos {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-relatos h1 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 32px;
+  font-weight: lighter;
+}
+.main-relatos img {
+  margin-top: 1%;
+  object-fit: cover;
+  width: 800px;
+  height: 300px;
+}
+.main-relatos p {
+  font-family: "Bitter", serif;
+  font-size: 16px;
+  text-align: justify;
+  line-height: 1.6;
+  margin: 1% 7% 0% 7%;
+}
+.main-relatos .cala-salguer {
+  padding: 0% 25% 0% 25%;
+}
+
 .fotos-relato1 {
   display: flex;
   margin-top: 5%;
@@ -443,10 +471,25 @@ footer .div__der .div__der--logo {
 }
 .fotos-relato1 .mapa-radial .tit-fotos-jorge {
   font-family: "Quicksand", sans-serif;
-  font-size: 32px;
+  font-size: 25px;
   font-weight: lighter;
   margin-left: 3vw;
   margin-bottom: 10px;
+}
+
+.botones-relatos {
+  color: black;
+  display: flex;
+  justify-content: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  margin: 3% 45% 3% 45%;
+  padding: 10px;
+  background-color: #B3A1A1;
+  transition: all 1s;
+}
+.botones-relatos:hover {
+  border-radius: 10px;
 }
 
 /* BIO */
@@ -595,6 +638,9 @@ footer .div__der .div__der--logo {
 }
 /* Responsive -  footer */
 @media only screen and (min-width: 400px) and (max-width: 1000px) {
+  footer {
+    margin-top: 720px;
+  }
   footer footer div a {
     font-size: 10px;
   }

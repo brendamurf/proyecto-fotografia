@@ -85,10 +85,11 @@
 }
 
 /* Responsive -  footer */
-
 @media only screen and (min-width: 400px) and (max-width: 1000px) {
     
     footer{
+        margin-top: 720px;
+    
         footer div a{
             font-size: 10px;       
         }
