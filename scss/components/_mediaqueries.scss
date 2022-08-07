@@ -114,7 +114,54 @@
 /*Responsive - fotografias */
 @media only screen and (min-width: 400px) and (max-width: 1000px){
     .collage{
-        width: 500px;
+        display: none;
+    }
+
+    .sec-1{
+    
+        .paisajes{
+    
+            img{
+                height: 181px;
+                margin-left: 25%;
+            }
+
+            .vertical{
+                display: none;
+            }
+    
+            .paisajes__tit{
+                margin-left: 25%;
+                font-size: 18px;
+                font-weight: lighter;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .sec-2{
+    
+        .retratos{
+            
+    
+            img{
+                height: 181px;
+                margin-left: 25%;
+            }
+
+            .vertical{
+                display: none;
+            }
+    
+            .retratos__tit{
+                font-size: 18px;
+                font-weight: lighter;
+                margin-left: 25%;
+                margin-bottom: 10px;
+            }
+    
+        }
+        
     }
 }
 

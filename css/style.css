@@ -272,38 +272,43 @@ footer .div__der .div__der--logo {
   transform: scale(1.5);
 }
 
-/* Sección N° 2 y 3 - carrusel paisajes y retratos */
-section div img {
-  height: 281px;
-}
-
-.carrusel-1, .carrusel-2 {
-  margin: 5% 0% 5% 0%;
+.sec-1 {
+  margin-top: 5%;
   display: flex;
 }
+.sec-1 .paisajes {
+  align-items: center;
+}
+.sec-1 .paisajes img {
+  height: 181px;
+}
+.sec-1 .paisajes .paisajes__tit {
+  font-family: "Quicksand", sans-serif;
+  font-size: 32px;
+  font-weight: lighter;
+  margin-left: 3vw;
+  margin-bottom: 10px;
+}
 
-.paisajes img, .retratos img {
-  height: 40vh;
+.sec-2 {
+  margin-top: 3%;
+  display: flex;
+}
+.sec-2 .retratos {
   justify-content: flex-start;
   align-items: center;
 }
-
-.paisajes__tit, .retratos__tit {
+.sec-2 .retratos img {
+  height: 181px;
+}
+.sec-2 .retratos .retratos__tit {
   font-family: "Quicksand", sans-serif;
   font-weight: lighter;
+  font-size: 32px;
   margin-left: 3vw;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
-/* Responsive - fotografías */
-@media only screen and (min-width: 400px) and (max-width: 800px) {
-  .fotografias-responsive {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
 /* RELATOS */
 /* Header relatos page */
 .relatospage {
@@ -589,7 +594,33 @@ section div img {
 /*Responsive - fotografias */
 @media only screen and (min-width: 400px) and (max-width: 1000px) {
   .collage {
-    width: 500px;
+    display: none;
+  }
+  .sec-1 .paisajes img {
+    height: 181px;
+    margin-left: 25%;
+  }
+  .sec-1 .paisajes .vertical {
+    display: none;
+  }
+  .sec-1 .paisajes .paisajes__tit {
+    margin-left: 25%;
+    font-size: 18px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+  }
+  .sec-2 .retratos img {
+    height: 181px;
+    margin-left: 25%;
+  }
+  .sec-2 .retratos .vertical {
+    display: none;
+  }
+  .sec-2 .retratos .retratos__tit {
+    font-size: 18px;
+    font-weight: lighter;
+    margin-left: 25%;
+    margin-bottom: 10px;
   }
 }
 /* Responsive - relatos */

@@ -8,9 +8,7 @@
 
 .collage{
     background-color: #e6f5ffda;
-    // width: 92vw;
     height: 85vh;
-    // padding: 50px;
 
     img{
         width: 200px;
@@ -173,61 +171,53 @@
             transform: scale(1.5);
         }
     }
-    
-    
-
-    
-
-
 
 }
-  
-   
 
 
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-/* Sección N° 2 y 3 - carrusel paisajes y retratos */
-section div img{
-    height: 281px;
-}
-
-.carrusel-1, .carrusel-2{
-    margin: 5% 0% 5% 0%;
+.sec-1{
+    margin-top: 5%; 
     display: flex;
-}
 
-.paisajes img, .retratos img{
-    height: 40vh;
-    justify-content: flex-start;
-    align-items: center;
-    
-}
-
-.paisajes__tit, .retratos__tit{
-    font-family: 'Quicksand', sans-serif;
-    font-weight: lighter;
-    margin-left: 3vw;
-    margin-bottom: 5px;
-}
-
-/* Responsive - fotografías */
-@media only screen and (min-width: 400px) and (max-width: 800px) {
-    .fotografias-responsive{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    .paisajes{
+        // height: 80vh;
         align-items: center;
+
+        img{
+            height: 181px;
+        }
+
+        .paisajes__tit{
+            font-family: 'Quicksand', sans-serif;
+            font-size: 32px;
+            font-weight: lighter;
+            margin-left: 3vw;
+            margin-bottom: 10px;
+        }
     }
+}
+
+.sec-2{
+    margin-top: 3%;
+    display: flex;
+
+    .retratos{
+        // height: 80vh;
+        justify-content: flex-start;
+        align-items: center;
+
+        img{
+            height: 181px;
+        }
+
+        .retratos__tit{
+            font-family: 'Quicksand', sans-serif;
+            font-weight: lighter;
+            font-size: 32px;
+            margin-left: 3vw;
+            margin-bottom: 10px;
+        }
+
+    }
+    
 }
